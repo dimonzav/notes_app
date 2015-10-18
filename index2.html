@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Notes App</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+      height: 1000px;
+      background: -webkit-linear-gradient(#1919FF, #F89721); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#1919FF, #F89721); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#1919FF, #F89721); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#1919FF, #F89721); /* Standard syntax */
+    }
+    .modal-content {
+      background: #F9AC4D;
+    }
+    #textarea {
+      background: #FCD6A6;
+    }
+    .panel-body {
+      background: #FFFF99;
+    }
+    .panel-group {
+      height: 100%;
+    }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel-group"></div>
+      <div class="row">
+        <button class="btn btn-success" data-toggle="modal" data-target="#newNoteForm">Add new note</button>
+        <button class="btn btn-success" id="remove">Remove all note</button>
+      </div>
+      <div class="modal fade" id="newNoteForm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Add new note</h4>
+              <form role="form">
+                <div class="form-group">
+                  <label for="textarea">Enter your note here:</label>
+                  <textarea name="note" class="form-contol" id="textarea" cols="75" rows="10"></textarea>
+                </div>
+                <button type="button" class="btn btn-success" id="add">Add note</button>
+              </form>
+            </div>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions_jQuery.js"></script>
+
+  </body>
+</html>

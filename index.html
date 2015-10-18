@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="container-fluid">
+      <button type="button" class="btn btn-success" id="add2">Add note</button>
+      <p id="some"></p>
+      <div class="panel-group" id="panelGroup">
+        <div class="panel panel-primary" id="pan">
+          <button type="button" class="close" id="closePanel">&times;</button>
+          <div class="panel-heading" id="date"></div>
+          <div class="panel-body" id="textNote"></div>
+        </div>
+      </div>
+      <button class="btn btn-success" data-toggle="modal" data-target="#newNoteForm" >Add new note</button>
+      <div class="modal fade" id="newNoteForm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Add new note</h4>
+              <form role="form">
+                <div class="form-group">
+                  <label for="textarea">Enter your note here:</label>
+                  <textarea name="note" class="form-contol" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+                <button type="button" class="btn btn-success" id="add">Add note</button>
+              </form>
+            </div>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+
+  </body>
+</html>
